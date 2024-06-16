@@ -37,12 +37,16 @@ export const Department = () => {
         {
             const department = {id : did,departmentName : dName,departmentDescription : description};
             if(!id){
-                addDepartment(department).then(response => console.log(response.data));
-                navigator("/departments")
+                addDepartment(department).then(response => {
+                    console.log(response.data);
+                    navigator("/departments");
+                });
             }
             else{
-                updateDepartment(department,id).then(response => console.log(response.data));
-                navigator("/departments");
+                updateDepartment(department,id).then(response => {
+                    console.log(response.data)
+                    navigator("/departments");
+                });
             }
         }
     }

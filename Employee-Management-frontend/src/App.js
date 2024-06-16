@@ -1,9 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import { Header } from './components/Header';
 import { EmployeeList } from './components/EmployeeList';
 import { DepartmentList} from './components/DepartmentList';
-import { useState } from 'react';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import { Employee } from './components/Employee';
 import {Department} from './components/Department.js'

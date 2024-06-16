@@ -42,14 +42,15 @@ export const Employee = () => {
             if(eid){
                 updateEmployee(employee,eid).then((response) => {
                     console.log(response.data);
+                    navigator("/employees");
                 })
             }
             else{
                 createEmployee(employee).then((response) => {
                     console.log(response.data);
+                    navigator("/employees");
                 })
             }
-            navigator("/employees");
         }
     }
   return (
